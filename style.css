@@ -1,0 +1,167 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* BODY */
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+
+}
+
+
+
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+    color: #e50914;
+}
+
+/* NAV FORM */
+.navbar form {
+    display: flex;
+    gap: 15px;
+}
+
+select {
+    padding: 6px 10px;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    padding: 7px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #f6121d;
+}
+
+/* MAIN CONTENT */
+.content {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.content h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.content p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+/* EMAIL FORM */
+.content form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 60px;
+}
+
+input[type="text"],
+input[type="email"] {
+    padding: 12px;
+    width: 300px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+}
+
+/* TRENDING SECTION */
+h2 {
+    text-align: left;
+    margin-left: 60px;
+    margin-bottom: 20px;
+}
+
+/* IMAGE ROW */
+table {
+    margin: auto;
+}
+
+table img {
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+table img:hover {
+    transform: scale(1.1);
+}
+
+/* FOOTER */
+footer {
+    padding: 50px;
+    color: #aaa;
+}
+
+footer p {
+    margin: 15px 0;
+}
+
+/* FAQ */
+details {
+    margin-bottom: 15px;
+    background-color: #222;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+summary {
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* FOOTER LINKS */
+footer table a {
+    color: #aaa;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+footer table a:hover {
+    text-decoration: underline;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 20px;
+    }
+
+    .content h1 {
+        font-size: 2rem;
+    }
+
+    .content form {
+        flex-direction: column;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+        width: 100%;
+    }
+}
